@@ -1,5 +1,5 @@
 {% set name = "km3pipe" %}
-{% set version = "9.9.3" %}
+{% set version = "9.9.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/km3pipe-{{ version }}.tar.gz
-  sha256: bc90012e7aa4fb4a8ccf460390e683536041b0a77c9ecb0c02c17b5adf522acf
+  sha256: 3ac3819cb58e4a31457809cc953cb67806e8152caf7c755103095c83ee7bad4d
 
 build:
   number: 0
@@ -56,7 +56,6 @@ requirements:
     - thepipe >=1.3.5
     - toml
     - tqdm
-    - urwid
 
 test:
   imports:
