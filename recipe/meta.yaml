@@ -56,7 +56,6 @@ requirements:
     - thepipe >=1.3.5
     - toml
     - tqdm
-    - urwid
 
 test:
   imports:
