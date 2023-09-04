@@ -1,11 +1,11 @@
-About km3pipe
-=============
+About km3pipe-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/km3pipe-feedstock/blob/main/LICENSE.txt)
 
 Home: http://git.km3net.de/km3py/km3pipe
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/km3pipe-feedstock/blob/main/LICENSE.txt)
 
 Summary: An analysis framework for KM3NeT
 
