@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/km3pipe-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/km3pipe-{{ version }}.tar.gz
   sha256: 6e86d314650f8083bca6f233c79d2456a12c21af6160111d7b60e441a7c6da63
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - km3pipe=km3pipe.cmd:main
@@ -35,7 +35,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools_scm
   run:
     - awkward >=1.4
@@ -48,7 +48,7 @@ requirements:
     - numpy >=1.17.0
     - particle >=0.8.0
     - passlib
-    - python >=3.6
+    - python >={{ python_min }}
     - requests
     - setuptools >=40.6.2
     - setuptools-scm
@@ -81,6 +81,7 @@ test:
     - tres --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: http://git.km3net.de/km3py/km3pipe
